@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using DataStructures.LinkedList.SinglyLinkedList;
+using System.Collections;
 
 //ARRAY
 #region
@@ -65,5 +66,37 @@
 //    Console.WriteLine($"{arr4.Count}/{arr4.Capacity}");
 //}
 #endregion
+
+
+//LINKED LIST
+#region
+//var linkedList = new SinglyLinkedList<int>();
+//linkedList.AddFirst(1);
+//linkedList.AddFirst(2);
+//linkedList.AddFirst(3);
+//linkedList.AddLast(4);
+//linkedList.AddFirst(5);
+//linkedList.AddAfter(linkedList.Head.Next, 99);
+////linkedList.AddBefore(null, 888);
+//linkedList.AddAfter(linkedList.Head.Next, new SinglyLinkedListNode<int>(789));
+/////linkedList.AddBefore(linkedList.Head.Next, new SinglyLinkedListNode<int>(789));
+
+//foreach (var item in linkedList)
+//{
+//    Console.Write(item + " ");
+//}
+
+//Console.WriteLine("\nRemoveFirst: " + linkedList.RemoveFirst());
+//Console.WriteLine("RemoveLast: " + linkedList.RemoveLast());
+//Console.WriteLine("RemoveLast: " + linkedList.RemoveLast());
+
+////var linkedList2 = new SinglyLinkedList<char>(new char[] {'a', 'b', 'c'});
+////foreach (var item in linkedList2)
+////{
+////    Console.WriteLine(item);
+////}
+#endregion
+
+
 
 Console.ReadKey();
