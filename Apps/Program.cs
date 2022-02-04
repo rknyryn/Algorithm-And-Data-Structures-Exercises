@@ -1,4 +1,5 @@
-﻿using DataStructures.LinkedList.SinglyLinkedList;
+﻿using DataStructures.LinkedList.DoublyLinkedList;
+using DataStructures.LinkedList.SinglyLinkedList;
 using System.Collections;
 
 //ARRAY
@@ -69,6 +70,7 @@ using System.Collections;
 
 
 //LINKED LIST
+//singly
 #region
 //var linkedList = new SinglyLinkedList<int>();
 //linkedList.AddFirst(1);
@@ -96,7 +98,34 @@ using System.Collections;
 ////    Console.WriteLine(item);
 ////}
 #endregion
+//doubly
+#region
+//DoublyLinkedList<int> doublyLinkedList = new DoublyLinkedList<int>();
+//doublyLinkedList.AddFirst(0);
+//doublyLinkedList.AddFirst(1);
+//doublyLinkedList.AddFirst(2);
+//doublyLinkedList.AddFirst(new DoublyLinkedListNode<int>(99));
+//doublyLinkedList.AddLast(777);
+//doublyLinkedList.AddLast(new DoublyLinkedListNode<int>(666));
+//doublyLinkedList.AddAfter(doublyLinkedList.Tail, 44);
+//doublyLinkedList.AddAfter(doublyLinkedList.Head, new DoublyLinkedListNode<int>(33));
+//doublyLinkedList.AddBefore(doublyLinkedList.Head.Next, 22);
 
+//foreach (var item in doublyLinkedList)
+//{
+//    Console.Write(item + " ");
+//}
+//Console.WriteLine();
+//Console.WriteLine($"Remove first: {doublyLinkedList.RemoveFirst()}");
+//Console.WriteLine($"Remove last: {doublyLinkedList.RemoveLast()}");
+//Console.WriteLine($"Remove: {doublyLinkedList.Remove(22)}");
+//Console.WriteLine($"Remove: {doublyLinkedList.Remove(666)}");
+//Console.WriteLine($"Remove: {doublyLinkedList.Remove(11)}");
 
+//foreach (var item in doublyLinkedList)
+//{
+//    Console.Write(item + " ");
+//}
+#endregion
 
 Console.ReadKey();

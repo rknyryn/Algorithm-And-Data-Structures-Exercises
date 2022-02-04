@@ -14,6 +14,7 @@ namespace DataStructures.LinkedList.SinglyLinkedList
         public SinglyLinkedListNode(T value)
         {
             Value = value;
+            Next = null;
         }
 
         public SinglyLinkedListNode()
