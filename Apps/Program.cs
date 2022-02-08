@@ -1,5 +1,7 @@
 ﻿using DataStructures.LinkedList.DoublyLinkedList;
 using DataStructures.LinkedList.SinglyLinkedList;
+using DataStructures.Tree.BinarySearchTree;
+using DataStructures.Tree.BinaryTree;
 using System.Collections;
 
 //ARRAY
@@ -128,5 +130,30 @@ using System.Collections;
 //}
 #endregion
 
+//BST
+#region
+//var bst = new BST<int>();
+//bst.Add(20);
+//bst.Add(10);
+//bst.Add(22);
+//bst.Add(25);
+//bst.Add(21);
 
+//Console.WriteLine("InOrder");
+//new BinaryTree<int>().InOrder(bst.Root).ForEach(item => Console.Write(item + " "));
+//Console.WriteLine("\nPreOrder");
+//new BinaryTree<int>().PreOrder(bst.Root).ForEach(item => Console.Write(item + " "));
+//Console.WriteLine("\nPostOrder");
+//new BinaryTree<int>().PostOrder(bst.Root).ForEach(item => Console.Write(item + " "));
+
+//BST<int> BST = new BST<int>(new List<int>() { 60, 40, 70, 20, 45, 65, 85 });
+//var bt = new BinaryTree<int>();
+//bt.InOrder(BST.Root).ForEach(x => global::System.Console.Write(x + " "));
+//BST.Remove(BST.Root, 20);
+//bt.ClearList();
+//Console.WriteLine();
+//bt.InOrder(BST.Root).ForEach(x => global::System.Console.Write(x + " "));
+//Console.WriteLine();
+//Console.WriteLine("Depth: " + BinaryTree<int>.MaxDepth(BST.Root));
+#endregion
 Console.ReadKey();
