@@ -1,5 +1,7 @@
-﻿using DataStructures.LinkedList.DoublyLinkedList;
+﻿using DataStructures.Heap;
+using DataStructures.LinkedList.DoublyLinkedList;
 using DataStructures.LinkedList.SinglyLinkedList;
+using DataStructures.Shared;
 using DataStructures.Tree.BinarySearchTree;
 using DataStructures.Tree.BinaryTree;
 using System.Collections;
@@ -32,7 +34,6 @@ using System.Collections;
 //Console.WriteLine($"{arr.Count} / {arr.Capacity}");
 //arr.Where(x => x % 2 == 0).ToList().ForEach(x => Console.WriteLine(x));
 #endregion
-
 #region
 //var arr2 = new DataStructures.Array.Array<int>(1, 2, 3, 4, 12);
 //foreach (var item in arr2)
@@ -53,7 +54,6 @@ using System.Collections;
 
 //Console.WriteLine("--------------------");
 #endregion
-
 #region
 //var arr4 = new DataStructures.Array.Array<int>();
 //for (int i = 0; i < 9; i++)
@@ -70,10 +70,8 @@ using System.Collections;
 //}
 #endregion
 
-
 //LINKED LIST
-//singly
-#region
+#region Singly
 //var linkedList = new SinglyLinkedList<int>();
 //linkedList.AddFirst(1);
 //linkedList.AddFirst(2);
@@ -100,8 +98,7 @@ using System.Collections;
 ////    Console.WriteLine(item);
 ////}
 #endregion
-//doubly
-#region
+#region Doubly
 //DoublyLinkedList<int> doublyLinkedList = new DoublyLinkedList<int>();
 //doublyLinkedList.AddFirst(0);
 //doublyLinkedList.AddFirst(1);
@@ -130,8 +127,7 @@ using System.Collections;
 //}
 #endregion
 
-//BST
-#region
+#region BST
 //var bst = new BST<int>();
 //bst.Add(20);
 //bst.Add(10);
@@ -156,4 +152,24 @@ using System.Collections;
 //Console.WriteLine();
 //Console.WriteLine("Depth: " + BinaryTree<int>.MaxDepth(BST.Root));
 #endregion
+
+#region HEAP
+//var heap = new MinHeap<int>(new int[] { 4, 1, 10, 8, 7, 5, 9, 3, 2 });
+
+//foreach (int i in heap)
+//    Console.Write(i + " ");
+
+//Console.WriteLine("\n-------------");
+
+//var maxHeap = new MaxHeap<int>(new int[] { 54, 45, 36, 27, 29, 18, 21, 11 });
+//foreach (var item in maxHeap)
+//    Console.Write(item + " ");
+
+//var heap = new BinaryHeap<int>(SortDirection.Ascending, new int[] { 54, 45, 36, 27, 29, 18, 21, 99 });
+//foreach (var item in heap)
+//{
+//    Console.Write(item + " ");
+//}
+#endregion
+
 Console.ReadKey();
